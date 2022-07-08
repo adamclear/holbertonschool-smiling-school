@@ -1,0 +1,81 @@
+/* Variables */
+
+:root {
+	/* Colors */
+	--color-purple: #C271FF;
+	--color-white: #FFFFFF;
+	--color-black: #071629;
+}
+
+/* Base */
+
+body {
+	font-family: 'Source Sans Pro' !important;
+	margin: 0 auto !important;
+	max-width: 87.5rem;
+}
+
+.btn {
+	background-color: var(--color-purple);
+	color: var(--color-white);
+}
+
+h1 {
+	font-size: 7.5rem;
+	font-weight: bolder;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 100%;
+}
+
+.text-purple {
+	color: var(--color-purple);
+}
+
+@font-face {
+	font-family: 'holberton_school-icon';
+	src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+	src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+	  url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+	  url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+	  url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+/* Header */
+
+header h1 {
+	margin-top: 9.3rem;
+	margin-bottom: -.5rem;
+}
+
+header p {
+	font-size: 2rem;
+	margin-top: 9.5rem;
+}
+
+.logo-smile {
+	height: 1.75rem;
+}
+
+.logo-text {
+	height: 1.75rem;
+}
+
+.nav-link {
+	color: var(--color-white);
+	font-size: .75rem;
+	font-weight: bold;
+}
+
+.page-header {
+	background-image: url(../images/pic_1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 68.31rem;
+	width: 100%;
+}
