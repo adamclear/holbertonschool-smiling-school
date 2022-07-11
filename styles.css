@@ -79,3 +79,36 @@ header p {
 	height: 68.31rem;
 	width: 100%;
 }
+
+/* Testimonials */
+
+.testimonials {
+	height: 24.5rem;
+	background-color: var(--color-purple);
+}
+
+/* Tutorials */
+
+.tutorials {
+	height: 38rem;
+}
+
+/* Membership */
+
+.membership {
+	height: 31.375rem;
+	background-color: var(--color-black);
+}
+
+/* Videos */
+
+.videos {
+	height: 38rem;
+}
+
+/* Footer */
+
+footer {
+	height: 15.5625rem;
+	background-color: var(--color-black);
+}
