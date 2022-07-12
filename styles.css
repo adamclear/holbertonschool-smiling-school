@@ -163,9 +163,43 @@ nav {
 
 /* Testimonials */
 
+[class^="carousel-arrow-"] {
+	height: 3.916875rem;
+}
+
+@media (min-width: 768px) {
+
+	.carousel-arrow-prev {
+		margin-right: 8.5rem;
+	}
+
+	.carousel-arrow-next {
+		margin-left: 8.5rem;
+	}
+}
+
+.carousel-item {
+	padding: 0 7rem;
+}
+
 .testimonials {
 	height: 24.5rem;
 	background-color: var(--color-purple);
+}
+
+@media (max-width: 768px) {
+	.testimonials {
+		height: 35rem;
+	}
+}
+
+.testimonials .rounded-circle {
+	height: 10rem;
+	width: 10rem;
+}
+
+.testimonial-text {
+	font-size: 1.375em;
 }
 
 /* Tutorials */
