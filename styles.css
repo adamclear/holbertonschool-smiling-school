@@ -43,8 +43,16 @@ html {
 	font-size: 100%;
 }
 
+.text-black {
+	color: var(--color-black);
+}
+
 .text-purple {
 	color: var(--color-purple);
+}
+
+.text-white {
+	color: var(--color-white);
 }
 
 @font-face {
@@ -117,6 +125,7 @@ nav {
 .nav-link:hover, .navbar-brand:hover {
 	color: var(--color-purple);
 	filter: drop-shadow(.1rem .1rem .25rem var(--color-black));
+	box-shadow: 0 4px 1px -2px white;
 }
 
 .page-header {
@@ -178,11 +187,11 @@ nav {
 
 @media (min-width: 768px) {
 
-	.carousel-arrow-prev {
+	.carousel-arrow-prev-testimonial {
 		margin-right: 8.5rem;
 	}
 
-	.carousel-arrow-next {
+	.carousel-arrow-next-testimonial {
 		margin-left: 8.5rem;
 	}
 }
@@ -213,8 +222,39 @@ nav {
 
 /* Tutorials */
 
+.duration {
+	margin: -.25rem 0 0 6rem;
+}
+
+.page-wrapper {
+	gap: 2rem;
+}
+
+.star-rating {
+	height: 1rem;
+}
+
+.tutorial-card {
+	height: 20.9375rem;
+	width: 15.9375rem;
+}
+
+.tutorial-profile {
+	height: 1.875rem;
+}
+
 .tutorials {
 	height: 38rem;
+}
+
+.tutorials .title {
+	margin: -.5rem 0 5rem 0;
+}
+
+.video_pb {
+	height: 4rem;
+	z-index: 100px;
+	margin: -11rem 0 0 6rem;
 }
 
 /* Membership */
