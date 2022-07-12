@@ -56,17 +56,25 @@ html {
 
 /* Header */
 
-.awards .card-img-top {
+.awards {
+	width: 100%;
+}
+
+.awards .rounded-circle {
 	height: 9.375rem;
 	width: 9.375rem;
 }
 
 .awards .card-transparent {
-	width: 13.7rem;
+	width: 9.375rem;
 }
 
 .awards p {
 	font-size: 1em;
+}
+
+.grouping {
+	width: 100%;
 }
 
 header h1 {
@@ -81,10 +89,19 @@ header p {
 
 .logo-smile {
 	height: 1.75rem;
+	width: 2.3125rem;
 }
 
 .logo-text {
 	height: 1.75rem;
+}
+
+nav {
+	width: 20rem;
+}
+
+.navbar {
+	width: 87.5%;
 }
 
 .nav-link {
@@ -97,8 +114,51 @@ header p {
 	background-image: url(../images/pic_1.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
+	background-color: var(--color-black);
 	height: 68.31rem;
 	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.page-header {
+		background-image: url(../images/pic_1.jpg);
+		background-position: top;
+		background-repeat: no-repeat;
+		height: 90rem;
+		width: 100%;
+	}
+}
+
+/* Hamburger */
+
+.navbar-toggler, .mobile-label {
+	height: 1.875rem;
+	width: 1.875rem;
+
+	font-family: 'holberton_school-icon' !important;
+	font-size: 1.875rem;
+	font-weight: 100;
+
+	left: 1.5rem;
+	border: none;
+}
+
+.mobile-label {
+	top: 1.9rem;
+}
+
+.mobile-label:before {
+	content: "\e911";
+}
+
+.navbar-toggler {
+	top: 2.3rem;
+}
+
+@media (min-width: 768px) {
+	.navbar-toggler {
+		left: -25rem;
+	}
 }
 
 /* Testimonials */

@@ -5,29 +5,37 @@
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <title>Smiling School</title>
+		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+		<!-- Stylesheets -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css">
+		<!-- Favicon -->
 		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 		<link rel="icon" type="image/png" href="../images/favicon.png">
-		<link rel="stylesheet" href="styles.css">
+		<!-- Javascript -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     </head>
 
     <body>
 
-        <header class="page-header" id="header">
-			<div class="container">
-				<nav class="navbar d-flex align-items-center">
-					<a class="navbar-brand mt-3" href="#">
-						<img class="logo-smile mr-2" src="../images/smile_off.png">
-						<img class="logo-text" src="../images/logo.png">
-					</a>
-					<div class="navbar-nav flex-row mt-2">
-							<a class="mr-5 nav-link" href="#">COURSES</a>
-							<a class="mr-5 nav-link" href="#">PRICING</a>
-							<a class="nav-link" href="#">LOGIN</a>
-					</div>
+        <header class="page-header d-flex flex-column align-items-center" id="header">
+			<div class="navbar d-flex flex-md-row flex-column justify-content-between">
+				<a href="./homepage.html" class="d-flex flex-column flex-md-row align-items-center navbar-brand mt-3" href="#">
+					<img class="logo-smile mr-2 mb-2" src="../images/smile_off.png">
+					<img class="logo-text" src="../images/logo.png">
+				</a>
+				<nav class="collapse d-md-flex flex-md-row flex-column mr-4 justify-content-between" id="nav-links">
+						<a href="./courses.html" class="nav-link text-center" href="#">COURSES</a>
+						<a href="./pricing.html" class="nav-link text-center" href="#">PRICING</a>
+						<a href="#login" class="nav-link text-center" href="#">LOGIN</a>
 				</nav>
+				<span class="mobile-label d-md-none text-white position-absolute"></span>
+				<button class="navbar-toggler position-absolute dm-md-none bg-transparent" type="button"data-toggle="collapse" data-target="#nav-links" aria-expanded="false" aria-label="Toggle nav-bar">
+				</button>
 			</div>
 			<div class="container text-white d-flex flex-column align-items-center">
 				<h1 class="mb-2">Get schooled</h1>
@@ -41,11 +49,11 @@
 					<p class="text-purple font-weight-bold mr-2">Learn</p>
 					<p>from the pros</p>
 				</div>
-				<div class="awards d-flex flex-column flex-sm-row justify-space-between mt-5">
-					<div class="d-flex flex-row justify-content-around">
-						<div class="card-transparent d-flex flex-column align-items-center mx-auto">
-							<img class="card-img-top rounded-circle" src="images/profile_1.jpg" alt="">
-							<div class="card-body text-center">
+				<div class="awards d-flex flex-column flex-md-row justify-content-around mt-5">
+					<div class="grouping d-flex flex-row justify-content-around mb-5">
+						<div class="d-flex flex-column align-items-center">
+							<img class="rounded-circle mb-3" src="images/profile_1.jpg" alt="">
+							<div class="text-center">
 								<h5 class="font-weight-bold">
 									Phillip Massey
 								</h5>
@@ -54,9 +62,9 @@
 								</p>
 							</div>
 						</div>
-						<div class="card-transparent d-flex flex-column align-items-center mr-auto">
-							<img class="card-img-top rounded-circle" src="images/profile_2.jpg" alt="">
-							<div class="card-body text-center">
+						<div class="d-flex flex-column align-items-center">
+							<img class="rounded-circle mb-3" src="images/profile_2.jpg" alt="">
+							<div class="text-center">
 								<h5 class="font-weight-bold">
 									Nannie Lawrence
 								</h5>
@@ -66,10 +74,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="d-flex flex-row justify-content-around">
-						<div class="card-transparent d-flex flex-column align-items-center mr-auto">
-							<img class="card-img-top rounded-circle" src="images/profile_3.jpg" alt="">
-							<div class="card-body text-center">
+					<div class="grouping d-flex flex-row justify-content-around">
+						<div class="d-flex flex-column align-items-center">
+							<img class="rounded-circle mb-3" src="images/profile_3.jpg" alt="">
+							<div class="text-center">
 								<h5 class="font-weight-bold">
 									Bruce Walters
 								</h5>
@@ -78,9 +86,9 @@
 								</p>
 							</div>
 						</div>
-						<div class="card-transparent d-flex flex-column align-items-center mr-auto">
-							<img class="card-img-top rounded-circle" src="images/profile_4.jpg" alt="">
-							<div class="card-body text-center">
+						<div class="d-flex flex-column align-items-center">
+							<img class="rounded-circle mb-3" src="images/profile_4.jpg" alt="">
+							<div class="text-center">
 								<h5 class="font-weight-bold">
 									Henry Hughes
 								</h5>
@@ -108,10 +116,6 @@
 
         <footer>
         </footer>
-
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         
     </body>
 
