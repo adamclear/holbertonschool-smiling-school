@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<body lang="en" dir="ltr">
 
     <head>
         <meta charset="utf-8">
@@ -54,19 +54,122 @@
 					</div>
 					<div class="d-flex flex-column form-group col-lg-4 col-md-6">
 						<h6 class="font-weight-bold">TOPIC</h6>
-						<div class="dropdown">
-							<button class="w-100 btn btn-secondary dropdown-toggle" type="button" id="topic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								NOVICE
-							</button>
-							<div class="dropdown-menu" aria-labelledby="topic">
-								<button class="dropdown-item" type="button">Novice</button>
-								<button class="dropdown-item" type="button">Intermediate</button>
-								<button class="dropdown-item" type="button">Expert</button>
-							</div>
-						</div>
+						<select class="form-control border-0" id="topicMenu">
+							<option class="bg-white text-body">Novice</option>
+							<option class="bg-white text-body">Intermediate</option>
+							<option class="bg-white text-body">Expert</option>
+						</select>
+					</div>
+					<div class="d-flex flex-column form-group col-lg-4 col-md-6">
+						<h6 class="font-weight-bold">SORT BY</h6>
+						<select class="form-control border-0" id="topicMenu">
+							<option class="bg-white text-body">Most Popular</option>
+							<option class="bg-white text-body">Most Recent</option>
+							<option class="bg-white text-body">Most Viewed</option>
+						</select>
 					</div>
 				</div>
 			</form>
+		</section>
+		<!-- Videos -->
+		<section class="videos">
+			<div class="container py-4">
+				<h6 class="text-secondary mb-2">11 videos</h6>
+				<div class="row">
+					<!-- New Card -->
+					<div class="video-card col-12 col-sm-6 col-md-4 col-lg-3 flex-column my-3">
+						<div class="card-pic-1">
+							<img class="video_tn img-fluid" src="./images/thumbnail_1.jpg">
+							<img class="video_pb_course img-fluid" src="./images/play.png">
+						</div>
+						<div>
+							<h5 class="font-weight-bold">Natural Smile</h5>
+							<p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+						</div>
+						<div class="d-flex flex-row mb-2">
+							<img class="tutorial-profile rounded-circle" src="./images/profile_1.jpg">
+							<h5 class="text-purple ml-3">Phillip Massey</h5>
+						</div>
+						<div class="d-flex flex-row">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_off.png">
+							<p class="duration text-purple">8 min</p>
+						</div>
+					</div>
+					<!-- New Card -->
+					<div class="video-card col-12 col-sm-6 col-md-4 col-lg-3 flex-column my-3">
+						<div class="card-pic-2">
+							<img class="video_tn img-fluid" src="./images/thumbnail_3.jpg">
+							<img class="video_pb img-fluid" src="./images/play.png">
+						</div>
+						<div>
+							<h5 class="font-weight-bold">Sad Smile</h5>
+							<p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+						</div>
+						<div class="d-flex flex-row mb-2">
+							<img class="tutorial-profile rounded-circle" src="./images/profile_4.jpg">
+							<h5 class="text-purple ml-3">Henry Huges</h5>
+						</div>
+						<div class="d-flex flex-row">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_off.png">
+							<img class="star-rating mr-1" src="./images/star_off.png">
+							<p class="duration text-purple">12 min</p>
+						</div>
+					</div>
+					<!-- New Card -->
+					<div class="video-card col-12 col-sm-6 col-md-4 col-lg-3 flex-column my-3">
+						<div class="card-pic-3">
+							<img class="video_tn img-fluid" src="./images/thumbnail_4.jpg">
+							<img class="video_pb img-fluid" src="./images/play.png">
+						</div>
+						<div>
+							<h5 class="font-weight-bold">Diagonal Smile</h5>
+							<p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+						</div>
+						<div class="d-flex flex-row mb-2">
+							<img class="tutorial-profile rounded-circle" src="./images/profile_3.jpg">
+							<h5 class="text-purple ml-3">Bruce Walters</h5>
+						</div>
+						<div class="d-flex flex-row">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_off.png">
+							<p class="duration text-purple">10 min</p>
+						</div>
+					</div>
+					<!-- New Card -->
+					<div class="video-card col-12 col-sm-6 col-md-4 col-lg-3 flex-column my-3">
+						<div class="card-pic-4">
+							<img class="video_tn img-fluid" src="./images/thumbnail_2.jpg">
+							<img class="video_pb img-fluid" src="./images/play.png">
+						</div>
+						<div>
+							<h5 class="font-weight-bold">Happy Smile</h5>
+							<p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+						</div>
+						<div class="d-flex flex-row mb-2">
+							<img class="tutorial-profile rounded-circle" src="./images/profile_2.jpg">
+							<h5 class="text-purple ml-3">Nannie Lawrence</h5>
+						</div>
+						<div class="d-flex flex-row">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<img class="star-rating mr-1" src="./images/star_on.png">
+							<p class="duration text-purple">7 min</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
         <!-- Footer -->
         <footer class="text-center text-white justify-content-center py-5">

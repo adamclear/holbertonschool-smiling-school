@@ -428,21 +428,14 @@ footer {
 
 /* Seach Bar */
 
-.dropdown-toggle,
-.dropdown-toggle:hover,
-.dropdown-toggle:active {
-	background-color: var(--color-purple-faded);
-	box-shadow: none;
-	filter: none;
-	border: none;
-}
-
 .form-control {
 	background-color: var(--color-purple-faded);
+	color: var(--color-white);
 }
 
 .form-control:focus {
 	background-color: var(--color-purple-faded);
+	color: var(--color-white);
 	box-shadow: none;
 }
 
@@ -464,6 +457,22 @@ footer {
 
 @media (max-width: 768px) {
 	.search-bar {
-		height: 20rem;
+		height: 18.75rem;
 	}
+}
+
+/* Videos */
+
+.videos {
+	height: auto;
+}
+
+.video-card {
+	background-color: var(--color-white);
+}
+
+.video_pb_course {
+	height: 4rem;
+	z-index: 100px;
+	margin: -11rem 0 0 6rem;
 }
