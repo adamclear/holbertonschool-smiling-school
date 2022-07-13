@@ -264,6 +264,20 @@ nav {
 	background-color: var(--color-black);
 }
 
+@media (max-width: 768px) {
+	.membership {
+		height: 40rem;
+	}
+}
+
+.membership .benefits {
+	width: 12rem;
+}
+
+.membership img {
+	height: 2.25rem;
+}
+
 /* Videos */
 
 .videos {
@@ -272,7 +286,42 @@ nav {
 
 /* Footer */
 
+.facebook:before {
+	content: "\e908";
+	color: var(--color-white);
+}
+
+.instagram:before {
+	content: "\e90a";
+	color: var(--color-white);
+}
+
 footer {
 	height: 15.5625rem;
 	background-color: var(--color-black);
+	padding: 0 10rem;
+}
+
+.footer-nav {
+	height: 10rem;
+}
+
+@media (max-width: 768px) {
+	.logo {
+		margin-bottom: 2rem;
+	}
+}
+
+.social {
+	width: 8.5rem;
+}
+
+.social-icon {
+	font-family: 'holberton_school-icon' !important;
+	font-size: 2em;
+}
+
+.twitter:before {
+	content: "\e90f";
+	color: var(--color-white);
 }
