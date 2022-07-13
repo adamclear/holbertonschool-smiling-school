@@ -3,8 +3,10 @@
 :root {
 	/* Colors */
 	--color-purple: #C271FF;
+	--color-purple-faded: #cd95e9;
 	--color-white: #FFFFFF;
 	--color-black: #071629;
+	--color-green: #82D24F;
 }
 
 /* Base */
@@ -18,6 +20,7 @@ body {
 .btn {
 	background-color: var(--color-purple);
 	color: var(--color-white);
+	width: 10rem;
 }
 
 .btn:hover {
@@ -45,6 +48,10 @@ html {
 
 .text-black {
 	color: var(--color-black);
+}
+
+.text-green {
+	color: var(--color-green);
 }
 
 .text-purple {
@@ -324,4 +331,139 @@ footer {
 .twitter:before {
 	content: "\e90f";
 	color: var(--color-white);
+}
+
+/* !!! Pricing Page !!! */
+
+/* Header */
+
+.check-mark:before {
+	font-family: 'holberton_school-icon' !important;
+	content: "\e905";
+	font-size: 2rem;
+}
+
+.go-pro {
+	font-size: 3.75rem;
+	margin-top: 4rem;
+}
+
+.features-row {
+	height: 3rem;
+}
+
+.logo-smile-title {
+	height: 2rem;
+}
+
+.logo-text-title {
+	height: 3rem;
+}
+
+.pricing-header {
+	background-image: url(../images/pic_2.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-color: var(--color-black);
+	height: 80rem;
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.pricing-header {
+		background-image: url(../images/pic_2.jpg);
+		background-position: top;
+		background-repeat: no-repeat;
+		height: 90rem;
+		width: 100%;
+	}
+}
+
+.signal {
+	height: 2.1875rem;
+}
+
+.what-is {
+	margin-top: 12rem;
+}
+
+/* FAQ */
+
+.question {
+	max-width: 25rem;
+}
+
+/* !!! Courses Page !!! */
+
+/* Header */
+
+.courses-header {
+	background-image: url(../images/pic_3.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-color: var(--color-black);
+	height: 15rem;
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.courses-header {
+		background-image: url(../images/pic_3.jpg);
+		background-position: top;
+		background-repeat: no-repeat;
+		height: auto;
+		width: 100%;
+	}
+}
+
+.courses-title {
+	font-family: 'Coiny';
+	font-size: 2em;
+	width: 40rem;
+}
+
+.mobile-nav-div {
+	height: 3rem;
+}
+
+/* Seach Bar */
+
+.dropdown-toggle,
+.dropdown-toggle:hover,
+.dropdown-toggle:active {
+	background-color: var(--color-purple-faded);
+	box-shadow: none;
+	filter: none;
+	border: none;
+}
+
+.form-control {
+	background-color: var(--color-purple-faded);
+}
+
+.form-control:focus {
+	background-color: var(--color-purple-faded);
+	box-shadow: none;
+}
+
+.form-control::placeholder {
+	color: var(--color-white);
+}
+
+.search-bar {
+	background-color: var(--color-purple);
+	height: 8.625rem;
+	padding-top: 2rem;
+}
+
+@media (max-width: 992px) {
+	.search-bar {
+		height: 14rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.search-bar {
+		height: 20rem;
+	}
 }
