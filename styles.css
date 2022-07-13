@@ -261,7 +261,7 @@ nav {
 .video_pb {
 	height: 4rem;
 	z-index: 100px;
-	margin: -11rem 0 0 6rem;
+	margin: -10rem 0 0 4.8rem;
 }
 
 /* Membership */
@@ -474,5 +474,5 @@ footer {
 .video_pb_course {
 	height: 4rem;
 	z-index: 100px;
-	margin: -11rem 0 0 6rem;
+	margin: -10rem 0 0 4.8rem;
 }
